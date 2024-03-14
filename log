@@ -240,3 +240,17 @@ exercises.c:115:1: error: control reaches end of non-void function [-Werror=retu
 cc1: all warnings being treated as errors
 Compilation failed
 d671943
+Thu 14 Mar 2024 09:19:42 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘checkSorted’:
+exercises.c:110:7: error: variable ‘retorno’ set but not used [-Werror=unused-but-set-variable]
+  110 |   int retorno = 0;
+      |       ^~~~~~~
+exercises.c:115:1: error: control reaches end of non-void function [-Werror=return-type]
+  115 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+2e534d0
