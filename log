@@ -28,3 +28,16 @@ exercises.c:64:18: error: comparison between pointer and integer [-Werror]
 cc1: all warnings being treated as errors
 Compilation failed
 1c962bd
+Thu 14 Mar 2024 08:24:51 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:62:42: error: invalid operands to binary * (have ‘int *’ and ‘long unsigned int’)
+   62 |   int *nuevoarr = (int *) malloc(newSize * sizeof(int))
+      |                                          ^
+exercises.c:63:3: error: expected ‘,’ or ‘;’ before ‘if’
+   63 |   if (nuevoarr == NULL) (EXIT_FAILURE);
+      |   ^~
+Compilation failed
+22fc447
