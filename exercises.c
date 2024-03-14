@@ -31,7 +31,6 @@ void reverseArray(int arr[], int size)
   int temp;
   int inicio = 0;
   int final = size - 1;
-
   while (inicio < final)
     {
       temp = arr[inicio];
@@ -84,7 +83,21 @@ ordenados y sus tamaños, y luego fusione estos dos
 arreglos en un tercer arreglo también ordenado.
 */
 void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,
-                       int result[]) 
+                       int result[])
+{
+  int ctra1 = 0;
+  int ctra2 = 0;
+  for(int i = 0; i < (size1 + size2); i++) {
+    if(arr1[ctra1] < arr2[ctra2]) {
+      result[i] = arr1[ctra1];
+      ctra1++;
+    } else {
+      result[i] = arr2[ctra2];
+      ctra2++;
+    }
+  }
+}
+
 {
     int* result = (int *) malloc (sizeof(int) * (size1 + size2));
     int ctp = 0;

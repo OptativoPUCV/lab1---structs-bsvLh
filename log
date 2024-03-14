@@ -102,3 +102,12 @@ exercises.c:87:28: note: previous definition of ‘result’ with type ‘int *�
       |                        ~~~~^~~~~~~~
 Compilation failed
 cc08b79
+Thu 14 Mar 2024 08:57:52 PM UTC: 
+ exercises.c | 14 ++++++++++++++
+ 1 file changed, 14 insertions(+)
+In file included from test.c:1:
+exercises.c:101:1: error: expected identifier or ‘(’ before ‘{’ token
+  101 | {
+      | ^
+Compilation failed
+b901652
