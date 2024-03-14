@@ -146,3 +146,14 @@ Thu 14 Mar 2024 08:59:56 PM UTC:
  tests:  0|4
 total_score: 30/70
 042e69d
+Thu 14 Mar 2024 09:01:28 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:94:10: error: expected ‘(’ before ‘else’
+   94 |     } if else(arr2[ctra2] <= arr1[ctra1]) {
+      |          ^~~~
+      |          (
+Compilation failed
+5fd89e3
