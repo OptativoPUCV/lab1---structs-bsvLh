@@ -52,14 +52,15 @@ los números pares del arreglo original.
 int *filterEvenNumbers(int arr[], int size, int *newSize)
 {
   int i; 
+  int contador = 0;
   for (i = 0 ; i < size ; i++)
     {
       if (arr[i] % 2 == 0)
       {
-        *newSize += 1;
+        contador += 1;
       }
     }
-  int *nuevoarr = (int *) malloc(newSize * sizeof(int));
+  int *nuevoarr = (int *) malloc(contador * sizeof(int));
   if (nuevoarr == NULL) (EXIT_FAILURE);
   for (i = 0 ; i < size ; i++)
     {
