@@ -62,12 +62,15 @@ int *filterEvenNumbers(int arr[], int size, int *newSize)
     }
   int *nuevoarr = (int *) malloc(contador * sizeof(int));
   if (nuevoarr == NULL) exit(EXIT_FAILURE);
+  int ctrlpos = 0;
   for (i = 0 ; i < size ; i++)
     {
       if (arr[i] % 2 == 0)
       {
-        nuevoarr[i] = arr[i];
+        nuevoarr[ctrlpos] = arr[i];
+        ctrlpos++;
       }
+    
     }
   (*newSize) = contador;
   return nuevoarr;
