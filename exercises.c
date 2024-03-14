@@ -57,7 +57,7 @@ int *filterEvenNumbers(int arr[], int size, int *newSize)
     {
       if (arr[i] % 2 == 0)
       {
-        contador += 1;
+        contador++;
       }
     }
   int *nuevoarr = (int *) malloc(contador * sizeof(int));
@@ -69,6 +69,7 @@ int *filterEvenNumbers(int arr[], int size, int *newSize)
         nuevoarr[i] = arr[i];
       }
     }
+  (*newSize) = contador;
   return nuevoarr;
 }
 

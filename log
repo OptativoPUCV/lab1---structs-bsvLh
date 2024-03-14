@@ -66,3 +66,14 @@ exercises.c:64:25: error: statement with no effect [-Werror=unused-value]
 cc1: all warnings being treated as errors
 Compilation failed
 350fcfd
+Thu 14 Mar 2024 08:29:04 PM UTC: 
+ exercises.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:64:25: error: statement with no effect [-Werror=unused-value]
+   64 |   if (nuevoarr == NULL) (EXIT_FAILURE);
+      |                         ^
+cc1: all warnings being treated as errors
+Compilation failed
+08013de
