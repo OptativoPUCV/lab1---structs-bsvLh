@@ -111,7 +111,7 @@ int checkSorted(int arr[], int size)
   int ascendente = 1;
   int descendente = 1;
   int i; 
-  for (i = 0 ; i < size ; i++)
+  for (i = 1 ; i < size ; i++)
     {
       if (arr[i] < arr[i-1])
       {
@@ -119,7 +119,7 @@ int checkSorted(int arr[], int size)
         break;
       }
     }
-  for (i = 0 ; i < size ; i++)
+  for (i = 1 ; i < size ; i++)
   {
     if (arr[i] < arr[i-1])
     {
