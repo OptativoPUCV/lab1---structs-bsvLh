@@ -254,3 +254,17 @@ exercises.c:115:1: error: control reaches end of non-void function [-Werror=retu
 cc1: all warnings being treated as errors
 Compilation failed
 2e534d0
+Sat 16 Mar 2024 08:22:55 PM UTC: 
+ exercises.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘checkSorted’:
+exercises.c:113:5: error: ‘else’ without a previous ‘if’
+  113 |   } else {
+      |     ^~~~
+exercises.c:110:7: error: variable ‘retorno’ set but not used [-Werror=unused-but-set-variable]
+  110 |   int retorno = 0;
+      |       ^~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+e471be6
