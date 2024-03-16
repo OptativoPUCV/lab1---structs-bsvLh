@@ -268,3 +268,13 @@ exercises.c:110:7: error: variable ‘retorno’ set but not used [-Werror=unuse
 cc1: all warnings being treated as errors
 Compilation failed
 e471be6
+Sat 16 Mar 2024 08:23:13 PM UTC: 
+ exercises.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘checkSorted’:
+exercises.c:113:5: error: ‘else’ without a previous ‘if’
+  113 |   } else {
+      |     ^~~~
+Compilation failed
+39c33d5
