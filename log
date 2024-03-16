@@ -321,3 +321,9 @@ exercises.c:114:7: error: unused variable ‘retorno’ [-Werror=unused-variable
 cc1: all warnings being treated as errors
 Compilation failed
 f4bf88a
+Sat 16 Mar 2024 09:12:38 PM UTC: 
+ exercises.c | 1 -
+ 1 file changed, 1 deletion(-)
+ tests:  0|3
+total_score: 40/70
+f8031c6
