@@ -108,14 +108,14 @@ y luego devuelva 1 si el arreglo está ordenado en orden ascendente,
 */
 int checkSorted(int arr[], int size) 
 {
-  int ascendente = 1;
-  int descendente = 1;
+  int ascen = 1;
+  int descen = 1;
   int i; 
   for (i = 1 ; i < size ; i++)
     {
       if (arr[i] < arr[i-1])
       {
-        ascendente = 0;
+          ascen = 0;
         break;
       }
     }
@@ -123,13 +123,13 @@ int checkSorted(int arr[], int size)
   {
     if (arr[i] > arr[i-1])
     {
-      descendente = 0;
+        descen = 0;
       break;
     }
   }
-  if (ascendente == 1) {
+  if (ascen == 1) {
     return 1;
-  } else if (descendente) {
+  } else if (descen) {
     return -1;
   } else {
     return 0;
@@ -157,8 +157,13 @@ typedef struct {
   int anioPublicacion;
 } Libro;
 
-void inicializarLibro(Libro *libro, const char *titulo, const char *nombreAutor,
-                      int anioNacimiento, int anioPublicacion) {}
+void inicializarLibro(Libro *libro, const char *titulo, const char*nombreAutor, int anioNacimiento, int anioPublicacion) 
+{
+  strcpy(libro->titulo, titulo);
+  libro->anioPublicacion = anioPublicacion;
+  strcpy(libro->autor.nombre, nombreAutor);
+  strcpy(libro->autor.anioNacimiento, apellidoAutor);
+}
 
 /*
 Ejercicio 7: Lista enlazada de números

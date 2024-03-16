@@ -339,3 +339,27 @@ Sat 16 Mar 2024 09:13:20 PM UTC:
  tests:  0|2
 total_score: 50/70
 eefc5e5
+Sat 16 Mar 2024 09:19:46 PM UTC: 
+ exercises.c | 21 +++++++++++++--------
+ 1 file changed, 13 insertions(+), 8 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘inicializarLibro’:
+exercises.c:165:39: error: ‘apellidoAutor’ undeclared (first use in this function)
+  165 |   strcpy(libro->autor.anioNacimiento, apellidoAutor);
+      |                                       ^~~~~~~~~~~~~
+exercises.c:165:39: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:165:22: error: passing argument 1 of ‘strcpy’ makes pointer from integer without a cast [-Werror=int-conversion]
+  165 |   strcpy(libro->autor.anioNacimiento, apellidoAutor);
+      |          ~~~~~~~~~~~~^~~~~~~~~~~~~~~
+      |                      |
+      |                      int
+In file included from /nix/store/4pqv2mwdn88h7xvsm7a5zplrd8sxzvw0-glibc-2.35-163-dev/include/features.h:490,
+                 from /nix/store/4pqv2mwdn88h7xvsm7a5zplrd8sxzvw0-glibc-2.35-163-dev/include/ctype.h:25,
+                 from exercises.c:1,
+                 from test.c:1:
+/nix/store/4pqv2mwdn88h7xvsm7a5zplrd8sxzvw0-glibc-2.35-163-dev/include/bits/string_fortified.h:77:1: note: expected ‘char * restrict’ but argument is of type ‘int’
+   77 | __NTH (strcpy (char *__restrict __dest, const char *__restrict __src))
+      | ^~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+61d657a
